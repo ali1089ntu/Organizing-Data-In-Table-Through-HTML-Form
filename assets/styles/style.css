@@ -1,0 +1,32 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1 0 auto;
+}
+
+.btn-white:hover{
+    background-color: goldenrod;
+    color: black !important;
+}
+
+#table1 th,td {
+    border: 1px solid grey;
+}
+
+#table1 td{
+    text-align: center;
+}
+
+#table1 tr:hover {background-color: #ddd;}
+
+#table1 th{
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+}
+

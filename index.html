@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---Bootstrap 5.3 CDN Link--->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!---Custom CSS--->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Table Practice</title>
+</head>
+<body>
+
+    <header class="bg-primary">
+       <div class="container">
+        <div class="row p-2">
+            <div class="col d-flex justify-content-center">
+                <nav class="d-flex justify-content-center gap-3">
+                    <a href="#" class="text-white text-decoration-none d-inline-block btn btn-white rounded-0 border-0 py-2 px-3">About</a>
+                    <a href="#" class="text-white text-decoration-none d-inline-block btn btn-white rounded-0 border-0 py-2 px-3">Home</a>
+                    <a href="#" class="text-white text-decoration-none d-inline-block btn btn-white rounded-0 border-0 py-2 px-3">Contact</a>
+                </nav>
+            </div>
+        </div>
+       </div>
+    </header>
+
+    <main class="d-flex justify-content-center">
+
+        <div class="container">
+            <div class="row p-4">
+                <div class="col-12">
+                    <hr>
+                </div>
+            </div>    
+            <div class="row p-4" style="min-height: auto">
+                <div class="col-6">
+                    <form onsubmit="createtbl()">
+                        <label for="fullName">Name</label><br>
+                        <input type="text" placeholder="Name" name="fullName" id="fullName" class="w-75 border border-secondary mb-2"><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" placeholder="Email" name="email" id="email" class="w-75 border border-secondary mb-2"><br>
+                        <label for="city">City</label><br>
+                        <input type="text" placeholder="City" name="city" id="city" class="w-75 border border-secondary mb-2"><br>
+                        <label for="age">Age</label><br>
+                        <input type="number" placeholder="Age" name="age" id="age" min="10" max="55" class="w-75 border border-secondary mb-2"><br>
+                        <label>Gender : </label>
+                        <input type="radio" name="gender" id="male" value="Male" class="radiobtns"> <label for="male">Male</label> 
+                        <input type="radio" name="gender" id="female" value="Female" class="radiobtns"> <label for="female">Female</label> 
+                        <input type="radio" name="gender" id="custom" value="Custom" class="radiobtns"> <label for="custom">Custom</label><br>
+                        <input type="submit" class="mt-4 btn btn-md rounded-0 border bg-black text-white py-2 px-3 w-75">
+                    </form>
+                </div>
+
+                <div class="col-6 d-flex justify-content-center">
+                    <div class="box m-3" id="box1" style="width: 100%; overflow: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-primary">
+        <div class="container">
+            <div class="row p-2">
+                <div class="col text-white text-center">
+                    <p class="mb-0">&copy 2023. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!---Bootstrap 5.3 JS CDN Link--->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!---JS External File Link--->
+    <script src="./assets/javascript/script.js"></script>
+</body>
+</html>
